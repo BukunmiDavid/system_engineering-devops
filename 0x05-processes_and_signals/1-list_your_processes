@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays a detailed list of all running processes with hierarchy
+# A Bash script that lists all running processes by PID only
 
-ps -ejH
+ps -eo pid
