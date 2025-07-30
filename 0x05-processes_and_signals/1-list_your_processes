@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all running processes by PID only
+# List all processes (all users, TTY-less included) in hierarchical format
 
-ps -eo pid
+ps auxf
