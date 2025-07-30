@@ -4,7 +4,7 @@
 
 for file in *; do
   # Ensure it's a regular file or directory (not hidden)
-  if [[ $file == *-* ]]; then
+  if [[ -e "$file" ]]; then
     if [[ "$file" == *-* ]]; then
       echo "${file#*-}"
     else
